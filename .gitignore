@@ -1,0 +1,12 @@
+node_modules/
+out/
+build/
+dist/
+.DS_Store
+*.log
+npm-debug.log*
+.env
+.env.local
+# assets lourds / perso (voix off, rushes) : à ne pas versionner
+**/public/voiceover.mp3
+**/public/rushes/
