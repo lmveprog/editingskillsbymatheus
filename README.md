@@ -96,3 +96,23 @@ npm run dev
 - questions / envie d'échanger là-dessus : ouvrez une issue, je réponds.
 
 made by matheus · dispo pour en parler
+
+---
+
+## hypercut — le skill claude code qui fait tout ça
+
+depuis septembre 2026 le process tourne aussi en une seule commande dans claude
+code : je dis « hypercut cette vidéo » avec le rush brut, et ça sort les deux
+masters + le script. le skill est dans [`skills/hypercut/SKILL.md`](skills/hypercut/SKILL.md) :
+dérush intelligent (détection de parole + transcription par prise, resserré aux
+réglages autocut : −45 dB, 15 ms), voix traitée, sous-titres mot à mot, hook
+qui frappe, illustrations en matériel réel animé (captures qui défilent, clips,
+vrais posts capturés au navigateur, zoom + surlignage sur le mot dit,
+détourage), sfx légers, musique, master mono à −14 lufs, dossier de livraison
+au titre de la vidéo.
+
+à copier dans `~/.claude/skills/hypercut/` pour l'avoir chez toi. les outils
+qu'il appelle (`tools/derush.py`, `tools/retime.py`, la lib remotion avec
+`Capture` / `XPost`) vivent dans mon pipeline privé, mais le déroulé est là en
+entier — c'est la partie qui compte.
+
